@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StocksListViewController" customModule="Investments" customModuleProvider="target">
+            <connections>
+                <outlet property="activityView" destination="LYr-Ca-th2" id="Kk2-Ae-Anx"/>
+                <outlet property="table" destination="ouA-Rv-ycc" id="fa2-9p-tpj"/>
+                <outlet property="view" destination="AKD-iJ-ZFW" id="kv4-up-lEQ"/>
+            </connections>
+        </placeholder>
+        <view contentMode="scaleToFill" id="AKD-iJ-ZFW">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ouA-Rv-ycc">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="LYr-Ca-th2">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="LYr-Ca-th2" firstAttribute="centerY" secondItem="AKD-iJ-ZFW" secondAttribute="centerY" id="2bu-sN-qN3"/>
+                <constraint firstItem="ouA-Rv-ycc" firstAttribute="leading" secondItem="BSt-tF-Rao" secondAttribute="leading" id="5LD-Sc-a7d"/>
+                <constraint firstItem="LYr-Ca-th2" firstAttribute="centerX" secondItem="AKD-iJ-ZFW" secondAttribute="centerX" id="9qG-Y7-cEp"/>
+                <constraint firstItem="ouA-Rv-ycc" firstAttribute="trailing" secondItem="BSt-tF-Rao" secondAttribute="trailing" id="Pes-9b-eYd"/>
+                <constraint firstItem="ouA-Rv-ycc" firstAttribute="top" secondItem="BSt-tF-Rao" secondAttribute="top" id="YiW-Pj-PAd"/>
+                <constraint firstItem="ouA-Rv-ycc" firstAttribute="bottom" secondItem="BSt-tF-Rao" secondAttribute="bottom" id="tCJ-lL-saX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="BSt-tF-Rao"/>
+            <point key="canvasLocation" x="136" y="758"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+</document>
